@@ -1,5 +1,7 @@
 package brsu.brest.model;
 
+import java.util.Objects;
+
 public class Special {
 
     private Integer specialId;
@@ -25,5 +27,18 @@ public class Special {
                 "specialId=" + specialId +
                 ", specialName='" + specialName + '\'' +
                 '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Special special = (Special) o;
+        return Objects.equals(specialId, special.specialId) && Objects.equals(specialName, special.specialName);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(specialId, specialName);
     }
 }
