@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1", shrink-to-fit="no">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Абитуриенты</title>
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-dark bg-dark navbar-expand-sm text-light p-1">
+        <div class="container-fluid">
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a href="index.html" class="navbar-brand"><img src="img/logo.svg" height="32" width="32" alt="HR"> </a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link " href="specialty.html">Специальности</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="applicants.html">Абитуриенты</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <nav id="main-header"
+         class="py-1 mh-3 navbar navbar-light bg-light text-dark">
+        <div class="container-fluid">
+            <span class="navbar-brand text-uppercase">Абитуриенты</span>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="applicant.html"
+                       class="btn btn-light"
+                       title="Добавить абитуриента">
+                        <i class="bi-plus"></i> <span class="d-none d-sm-inline">Добавить</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<section id="applicants">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col">
+                <div class="card">
+                    <table class="table table-striped">
+                        <thead class="table-dark">
+                        <tr>
+                            <th>ФИО</th>
+                            <th>Электронный адрес</th>
+                            <th>Дата добавления</th>
+                            <th></th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>Иванов Иван Иванович</td>
+                            <td>Ivanov@mail.ru</td>
+                            <td></td>
+                            <td class="text-end">
+                                <a href="applicant.html"
+                                   class="btn-sm btn-outline-secondary"
+                                   title="Редактировать данные абитуриента">
+                                    <i class="bi-pen"></i><span class="d-none d-md-inline"> Изменить</span></a>
+                                <span data-bs-toggle="modal" data-bs-target="#deleteDialog">
+                                    <a href="#" class="btn-sm btn-outline-secondary"
+                                       title="Удалить абитуриента"><i class="bi-x"></i><span
+                                            class="d-none d-md-inline"> Удалить</span>
+                                    </a>
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Петров Петр Петрович</td>
+                            <td>Petrov@gmail.com</td>
+                            <td></td>
+                            <td class="text-end">
+                                <a href="applicant.html"
+                                   class="btn-sm btn-outline-secondary"
+                                   title="Редактировать данные абитуриента">
+                                    <i class="bi-pen"></i><span class="d-none d-md-inline"> Изменить</span></a>
+                                <span data-bs-toggle="modal" data-bs-target="#deleteDialog">
+                                    <a href="#" class="btn-sm btn-outline-secondary"
+                                       title="Удалить абитуриента"><i class="bi-x"></i><span
+                                            class="d-none d-md-inline"> Удалить</span>
+                                    </a>
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Сергеев Сергей Сергеевич</td>
+                            <td>Sergeev@rambler.ru</td>
+                            <td></td>
+                            <td class="text-end">
+                                <a href="applicant.html"
+                                   class="btn-sm btn-outline-secondary"
+                                   title="Редактировать данные абитуриента">
+                                    <i class="bi-pen"></i><span class="d-none d-md-inline"> Изменить</span></a>
+                                <span data-bs-toggle="modal" data-bs-target="#deleteDialog">
+                                    <a href="#" class="btn-sm btn-outline-secondary"
+                                       title="Удалить абитуриента"><i class="bi-x"></i><span
+                                            class="d-none d-md-inline"> Удалить</span>
+                                    </a>
+                                </span>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <hr />
+    <p class="text-center">&copy; Dmitry Gritsuk 2021</p>
+</footer>
+
+<!-- Confirm delete applicant -->
+<div class="modal fade" id="deleteDialog" tabindex="-1" role="dialog"
+     aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header alert-danger">
+                <h5 class="modal-title" id="exampleModalLabel">Удаление абитуриента</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                Пожалуйста, подтвердите удаление
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Отмена</button>
+                <button type="button" class="btn btn-primary">Удалить</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+

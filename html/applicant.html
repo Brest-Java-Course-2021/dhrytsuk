@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1", shrink-to-fit="no">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Редактирование данных абитуриента</title>
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-dark bg-dark navbar-expand-sm text-light p-1">
+        <div class="container-fluid">
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a href="index.html" class="navbar-brand"><img src="img/logo.svg" height="32" width="32" alt="HR"> </a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link " href="specialty.html">Специальности</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="applicants.html">Абитуриенты</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <nav id="main-header"
+         class="py-1 mh-3 navbar navbar-light bg-light text-dark">
+        <div class="container-fluid">
+            <ul class="navbar-nav float-star">
+                <li class="nav-item" title="Вернуться на список абитуриентов">
+                    <a href="applicants.html" class="btn btn-light btn-block">
+                        <i class="bi-arrow-left"></i>
+                    </a>
+                </li>
+            </ul>
+            <span class="navbar-brand text-uppercase me-auto">Редактирование данных абитуриента</span>
+        </div>
+    </nav>
+</header>
+
+<section id="applicant">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <form>
+                            <div class="mb-3">
+                                <label class="form-label"
+                                       for="field_applicantName">Фамилия Имя Отчество</label>
+                                <input class="form-control"
+                                       id="field_applicantName"
+                                       type="text" value="ФИО">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label"
+                                       for="field_emailName">Электронная почта</label>
+                                <input class="form-control"
+                                       id="field_emailName"
+                                       type="text" value="E-mail">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label"
+                                       for="field_applicantName">Специальность</label>
+                                <select class="form-select" aria-label="Специальность">
+                                </select>
+                            </div>
+                            <div class="d-flex justify-content-end">
+                                <a href="applicants.html"
+                                   class="btn btn-light me-1"
+                                   title="Отмена">Отмена</a>
+                                <a href="applicants.html"
+                                   class="btn btn-light me-1"
+                                   title="Сохранить абитуриента">Сохранить</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <hr />
+    <p class="text-center">&copy; Dmitry Gritsuk 2021</p>
+</footer>
+
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
